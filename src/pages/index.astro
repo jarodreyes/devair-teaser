@@ -1,5 +1,7 @@
 ---
 import Layout from '../components/Layout.astro';
+
+
 ---
 
 <Layout title="DevAir.club">
@@ -12,8 +14,19 @@ import Layout from '../components/Layout.astro';
       <source src="devair.mp4" type="video/mp4">
     </video>
 	</main>
-  <!-- If you are developer you are welcome here. Visit https://devair.club/500_club to join the waitlist. You should have received a referral code from Jarod or Eva. If not ask a developer friend for one. -->
 </Layout>
+
+<!-- If you are developer you are welcome here. Visit https://devair.club/500_club to join the waitlist.-->
+
+<script type="text/javascript">  
+  const audio = document.getElementById('player');
+  audio.play();
+  audio.pause();
+  setTimeout(function() {
+    audio.play();
+    console.log("Welcome devs. For patient people you will find this message. Look to the bottom of the page for your easter egg. Love, Eva and Jarod.");
+  }, 32000);
+</script>
 
 
 <style>
