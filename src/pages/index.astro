@@ -5,7 +5,7 @@ import Layout from '../components/Layout.astro';
 ---
 
 <Layout title="DevAir.club">
-  <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+  <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
   <audio id="player" autoplay loop preload>
     <source src="devair.mp3" type="audio/mp3">
   </audio>
@@ -20,12 +20,10 @@ import Layout from '../components/Layout.astro';
 
 <script type="text/javascript">  
   const audio = document.getElementById('player');
-  audio.play();
-  audio.pause();
   setTimeout(function() {
     audio.play();
     console.log("Welcome devs. For patient people you will find this message. Look to the bottom of the page for your easter egg. Love, Eva and Jarod.");
-  }, 32000);
+  }, 32391);
 </script>
 
 
