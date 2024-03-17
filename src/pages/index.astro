@@ -6,11 +6,11 @@ import Layout from '../components/Layout.astro';
 
 <Layout title="DevAir.club">
   <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
-  <audio id="player" autoplay loop preload>
+  <audio id="player" autoplay loop preload playsinline>
     <source src="devair.mp3" type="audio/mp3">
   </audio>
 	<main>
-    <video id="devair" height="100%" autoplay loop muted>
+    <video id="devair" height="100%" autoplay loop muted playsinline>
       <source src="devair_comp.mp4" type="video/mp4">
     </video>
 	</main>
